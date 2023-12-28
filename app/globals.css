@@ -2,67 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  box-sizing: border-box;
-  background: #191b28;
+.animate__animated.animate__zoomInDown {
+  --animate-delay: 0.5s;
 }
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 4rem;
+.glass {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
-.sub-container {
-  height: 28rem;
-  width: 22vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 1.1rem;
-  background: #191b28;
-  box-shadow: inset 11px 11px 22px #0a0b10, inset -11px -11px 22px #282b40;
-}
-.audio-image {
-  height: 10rem;
-  width: 18vw;
-  border-radius: 10px;
-  margin: 2rem 0;
-  border: 0.2rem solid white;
-}
-.sub-container p {
-  color: #fff;
-  margin: 0.5rem 0;
-  font-size: 0.8rem;
-}
-.wavesurfer-container {
-  margin: 1rem 0;
-}
-.wavesurfer-controls {
-  display: flex;
-  margin-top: 1.5rem;
-}
-.wavesurfer-controls button {
-  font-size: 1.5rem;
-  color: white;
-  margin: 0 0.5rem;
-}
-.wavesurfer-controls button:nth-child(2),
-.wavesurfer-controls button:nth-child(3) {
-  background-color: #f90;
-  background: linear-gradient(210deg, #f90, rgb(227, 180, 114));
-  border-radius: 2rem;
-  padding: 0.8rem;
-  background: #191b28;
-  box-shadow: inset 11px 11px 22px #0a0b10, inset -11px -11px 22px #282b40;
-}
-
-@media screen and (max-width: 998px) {
-  .sub-container {
-    height: 32rem;
-    width: 80vw;
-  }
-  .audio-image {
-    height: 13rem;
-    width: 67vw;
-  }
+.bg-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 18.74rem solid transparent;
+  border-bottom: 18.74rem solid rgb(239, 237, 232);
+  border-left: 40rem solid orange;
+  border-right: 40rem solid transparent;
 }
