@@ -2,7 +2,7 @@ import "animate.css";
 
 export default function Home() {
   return (
-    <div className=" flex justify-center h-screen text-center overflow-hidden">
+    <div className=" flex justify-center items-center h-screen text-center overflow-hidden">
       <div className="bg-div"></div>
       <div className="glass w-[50vw] h-[40vh] animate__animated animate__lightSpeedInRight">
         <h1 className="animate__animated animate__tada animate_delay-2s text-[5rem] font-[800] text-orange-900">
