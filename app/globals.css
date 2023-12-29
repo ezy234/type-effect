@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.animate__animated.animate__zoomInDown {
+.p {
   --animate-delay: 0.5s;
 }
 .glass {
