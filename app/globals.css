@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+  color: indianred;
+  height: 100vh;
+}
+
+span {
+  border: 2px solid black;
+  border-right: none;
+  border-left: none;
+}
