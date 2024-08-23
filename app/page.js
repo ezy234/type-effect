@@ -4,20 +4,6 @@ import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
   const [color, setColor] = useState("black");
-
-let thearray = [
-          "I'm a the programmer",
-          
-          
-          "I'm a the Youtuber",
-          
-          
-          "I'm a the Designer",
-          
-          
-          // delay is in milliseconds
-        ]
-
   return (
     <div
       className="container flex"
@@ -26,7 +12,27 @@ let thearray = [
       {" "}
       <div className=" bg-white-300 h-[6rem] w-[5vw] rounded flex items-center justify-center shadow-lg shadow-black mr-[-3rem] z-10"></div>
       <TypeAnimation
-        sequence={thearray}
+        sequence={[
+          "I'm a programmer",
+          500,
+          () => {
+            setColor("hsl(187, 52%,");
+            //use the callback function to change the text color
+          },
+          "I'm a Youtuber",
+          900,
+          () => {
+            setColor("hsl(39, 100%,");
+            //use the callback function to change the text color
+          },
+          "I'm a Designer",
+          400,
+          () => {
+            setColor("hsl(120, 100%,");
+            //use the callback function to change the text color
+          },
+          // delay is in milliseconds
+        ]}
         repeat={1}
         speed={{
           type: "keyStrokeDelayInMs",
