@@ -7,13 +7,13 @@ export default function Home() {
 
 let thearray = [
           "I'm a the programmer",
-          500,
+          
           
           "I'm a the Youtuber",
-          900,
+          
           
           "I'm a the Designer",
-          400,
+          
           
           // delay is in milliseconds
         ]
