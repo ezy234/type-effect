@@ -15,22 +15,13 @@ export default function Home() {
         sequence={[
           "I'm a programmer",
           500,
-          () => {
-            setColor("hsl(187, 52%,");
-            //use the callback function to change the text color
-          },
+          
           "I'm a Youtuber",
           900,
-          () => {
-            setColor("hsl(39, 100%,");
-            //use the callback function to change the text color
-          },
+          
           "I'm a Designer",
           400,
-          () => {
-            setColor("hsl(120, 100%,");
-            //use the callback function to change the text color
-          },
+          
           // delay is in milliseconds
         ]}
         repeat={1}
